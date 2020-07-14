@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mogra|Pacifico|Bangers|Knewave|Share+Tech');
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* * {
+    border: solid 1px red;
+} */
+
+nav{
+    text-align: center;
+}
+
+footer{
+    text-align:center;
+    font-size: large;
+}
+
+/* Header CSS */
+
+.div-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+#pro-pic{
+    width:200px;
+}
+
+#img-box{
+    width:250px;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size:40px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+/* Body CSS */
+
+.div-body{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#bio{
+    width:230px;
+    flex-shrink: 0;
+    padding:10px;
+}
+
+#project-building-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-content:center;
+    text-align: center;
+}
+
+#project-heading{
+    width:100%;
+    font-size:32px;
+    font-weight: bold;
+}
+
+.blue-block{
+    background-color: #1b9aaa;
+    width: 30%;
+    height: 30%;
+    flex-shrink: 0;
+    flex-grow:1;
+}
+
+.grey-block{
+    background-color: #dddbcb;;
+    width: 30%;
+    height: 30%;
+    flex-shrink: 0;
+    flex-grow:1;
+}
+
+.white-block{
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.yellow-block{
+    background-color: #F4D352;
+    width: 30%;
+    height: 30%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.black-block{
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 30%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.project-icon{
+    width: 50px;
+}
+
