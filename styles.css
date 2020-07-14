@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Mogra|Pacifico|Bangers|Knewave|Share+Tech');
+@import url('https://fonts.googleapis.com/css?family=Mogra|Pacifico|Bangers|Knewave|Share+Tech|Archivo|Poppins');
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins';
 }
 
 /* * {
@@ -10,7 +10,18 @@ html {
 } */
 
 nav{
+    display: flex;
     text-align: center;
+    justify-content: space-around;
+}
+
+.div-header a{
+    color: black;
+    text-decoration: none;
+}
+
+.div-header a:hover{
+    background-color: #dddbcb;
 }
 
 footer{
@@ -30,19 +41,24 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 1;
+    margin-left: 20px;
 }
 
 #pro-pic{
     width:200px;
+    justify-content: center;
 }
 
 #img-box{
-    width:250px;
+    flex-basis:30%;
+    flex-shrink: 0;
     text-align: center;
 }
 
 h1{
     font-size: 50px;
+    margin-bottom: 0px;
+    flex-grow: inherit;
 }
 
 h2{
@@ -50,10 +66,18 @@ h2{
 }
 
 h3{
-    font-size: 32px;
+    margin:0px;
+    font-family: 'Bangers';
+    color:#1b9aaa;
+    font-size: 40px;
 }
 
+
 /* Body CSS */
+
+#project-text-header{
+    margin:0px;
+}
 
 .div-body{
     display: flex;
@@ -61,7 +85,7 @@ h3{
 }
 
 #bio{
-    width:230px;
+    flex-basis:30%;
     flex-shrink: 0;
     padding:10px;
 }
@@ -77,8 +101,9 @@ h3{
 
 #project-heading{
     width:100%;
-    font-size:32px;
+    font-size:40px;
     font-weight: bold;
+    margin-top:10px;
 }
 
 .blue-block{
@@ -87,14 +112,18 @@ h3{
     height: 30%;
     flex-shrink: 0;
     flex-grow:1;
+    margin: 5px;
+    border:black 0.5px solid;
 }
 
 .grey-block{
-    background-color: #dddbcb;;
+    background-color: #dddbcb;
     width: 30%;
     height: 30%;
     flex-shrink: 0;
     flex-grow:1;
+    margin: 5px;
+    border:black 0.5px solid;
 }
 
 .white-block{
@@ -103,6 +132,8 @@ h3{
     height: 30%;
     flex-shrink: 0;
     flex-grow: 1;
+    margin: 5px;
+    border:black 0.5px solid;
 }
 
 .yellow-block{
@@ -111,6 +142,8 @@ h3{
     height: 30%;
     flex-shrink: 0;
     flex-grow: 1;
+    margin: 5px;
+    border:black 0.5px solid;
 }
 
 .black-block{
@@ -120,6 +153,8 @@ h3{
     height: 30%;
     flex-shrink: 0;
     flex-grow: 1;
+    margin: 5px;
+    border:black 0.5px solid;
 }
 
 .project-icon{
