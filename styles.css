@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Pacifico|Bangers|Share+Tech|Archivo|Poppins|Bubblegum+Sans');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Pacifico|Bangers|Share+Tech|Archivo|Poppins|Bubblegum+Sans|Knewave|Sofia');
 
 html {
     font-family: 'Poppins';
@@ -11,6 +11,7 @@ html {
 } */
 
 footer{
+    margin:20px;
     text-align:center;
     font-size: medium;
 }
@@ -32,7 +33,7 @@ footer{
     display: flex;
     flex-direction: column;
     min-width:66%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-grow: 1;
     margin-left:2%;
     text-align: center;
@@ -42,6 +43,7 @@ nav{
     display: flex;
     text-align: center;
     justify-content: space-around;
+    padding:10px;
 }
 
 a{
@@ -65,11 +67,24 @@ a{
 
 #img-box{
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content:center;
+    align-items: center;
     min-width:160px;
     background-color: white;
     border-radius: 10px;
+}
+
+#socials-div{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-pics{
+    padding-top:10px;
+    width:30px;
 }
 
 h1{
@@ -121,6 +136,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     max-height:100%;
+    width:100%;
     align-items: stretch;
     justify-content: center;
     text-align: center;
@@ -154,7 +170,8 @@ h3{
     #1b9aaa;
 	background-position: 0 0, 80px 80px;
 	background-size:10px 10px, 10px 10px, cover;
-    width: 60%;
+    font-family: 'Knewave';
+    font-size: 50px;
 }
 
 .project-1:hover{
@@ -176,6 +193,8 @@ h3{
     background-position: 0 0, 80px 80px;
 	background-size:10px 10px, 10px 10px, cover;
     width: 30%;
+    font-family: 'Pacifico';
+    font-size: 50px;
 }
 
 .project-2:hover{
@@ -199,12 +218,15 @@ h3{
 	background-size:10px 10px, 10px 10px, cover;
     width: 100%;
     color: black;
+    font-family: 'Permanent Marker';
+    font-size:50px;
 }
 
 .project-3:hover{
     background-image:url(images/django-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color:white;    
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -221,6 +243,8 @@ h3{
 	background-position: 0 0, 80px 80px;
 	background-size:10px 10px, 10px 10px, cover;
     width: 35%;
+    font-family: 'Sofia';
+    font-size: 50px;
 }
 
 .project-4:hover{
@@ -278,7 +302,6 @@ h3{
     h3{
         margin:0px;
         font-family: 'Bangers';
-        color:#1b9aaa;
         font-size: 30px;
     }
 
@@ -289,6 +312,7 @@ h3{
         height:18%;
         width:100%;
         justify-content: center;
+        align-items:center;
     }
 
     #project-heading{
@@ -305,9 +329,31 @@ h3{
 /* --------------------------------------------------------------------------------------------- */
 
 @media (min-width: 768px) {
-    body {
-        background-color: yellow;
+    h1{
+        font-size: 70px;
+        font-family: 'Bangers';  
     }
+    
+    h2{
+        font-size:45px;
+        color:black;
+        
+    }
+    
+    h3{
+        margin:0px;
+        font-family: 'Bangers';
+        font-size: 45px;
+    }
+
+    p{
+        font-size: 14px;;
+    }
+
+    nav{
+        font-size:20px;
+    }
+
     /* All Project Blocks */
 
     .block-sizing{
@@ -315,6 +361,7 @@ h3{
         flex-grow:1;
         min-height:0;
         height:28%;
+        width:auto;
         margin-left: 5px;
         margin-right: 5px;
         border:white 2px solid;
@@ -325,6 +372,27 @@ h3{
     .project-1{
         width:60%;
     }
+
+    .project-2{
+        width:30%;
+    }
+
+    .project-3{
+        width:100%;
+        color: black;
+    }
+
+    .project-4{
+        width:25%;
+    }
+
+    .project-5{
+        width:65%;
+    }
+
+    #bio{
+        max-width: 260px;
+    }
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -334,7 +402,41 @@ h3{
 /* --------------------------------------------------------------------------------------------- */
 
 @media (min-width: 992px) {
-    body {
-        background-color: green;
+    
+    .div-header-text{
+        margin-left:2%;
+    }
+
+    h1{
+        font-size: 90px;
+        font-family: 'Bangers';  
+    }
+        
+    h2{
+        font-size:45px;
+        color:black;      
+    }
+        
+    h3{
+        margin:0px;
+        font-family: 'Bangers';
+        font-size: 45px;
+    }
+    
+    p{
+        font-size: 16px;;
+    }
+    
+    .social-pics{
+        width:40px;
+    }
+
+    nav{
+        font-size:20px;
+    }
+
+    #bio{
+        max-width: 255px;
+        padding:20px;
     }
 }
