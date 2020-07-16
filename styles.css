@@ -1,35 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Mogra|Pacifico|Bangers|Knewave|Share+Tech|Archivo|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Pacifico|Bangers|Share+Tech|Archivo|Poppins|Bubblegum+Sans');
 
 html {
     font-family: 'Poppins';
+    background-color: black;
+    color:white;
 }
 
 /* * {
     border: solid 1px red;
 } */
 
-nav{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.div-header a{
-    color: black;
-    text-decoration: none;
-}
-
-.div-header a:hover{
-    background-color: #dddbcb;
-}
-
 footer{
     text-align:center;
-    font-size: large;
+    font-size: medium;
 }
 
+/* --------------------------------------------------------------------------------------------- */
+
 /* Header CSS */
+
+/* --------------------------------------------------------------------------------------------- */
 
 .div-header{
     display: flex;
@@ -37,43 +27,72 @@ footer{
 }
 
 .div-header-text{
+    border-radius: 10px;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    min-width:66%;
     justify-content: space-evenly;
     flex-grow: 1;
-    margin-left: 20px;
-}
-
-#pro-pic{
-    width:200px;
-    justify-content: center;
-}
-
-#img-box{
-    flex-basis:30%;
-    flex-shrink: 0;
+    margin-left:2%;
     text-align: center;
 }
 
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-hover-bubble{
+    width:25%;
+}
+
+.nav-hover-bubble:hover{
+    border-radius:25px;
+    background-color: #dddbcb;
+}
+
+#pro-pic{
+    max-width: 80%;
+    object-fit: contain;
+}
+
+#img-box{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    min-width:160px;
+    background-color: white;
+    border-radius: 10px;
+}
+
 h1{
-    font-size: 50px;
     margin-bottom: 0px;
-    flex-grow: inherit;
+    font-family: 'Bangers';  
+    color: #1b9aaa; 
 }
 
 h2{
-    font-size:40px;
+    color:black;
+    
 }
 
 h3{
-    margin:0px;
     font-family: 'Bangers';
     color:#1b9aaa;
-    font-size: 40px;
 }
 
+/* --------------------------------------------------------------------------------------------- */
 
 /* Body CSS */
+
+/* --------------------------------------------------------------------------------------------- */
 
 #project-text-header{
     margin:0px;
@@ -81,83 +100,241 @@ h3{
 
 .div-body{
     display: flex;
+    min-width:auto;
+    min-height:auto;
     justify-content: flex-start;
+    margin-top:10px;
 }
 
 #bio{
-    flex-basis:30%;
+    flex-basis:28%;
     flex-shrink: 0;
-    padding:10px;
+    padding:2%;
+    margin-right:2%;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-size:12px;
 }
 
 #project-building-blocks{
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+    max-height:100%;
+    align-items: stretch;
     justify-content: center;
-    align-content:center;
     text-align: center;
 }
 
 #project-heading{
+    display:flex;
+    justify-content: center;
     width:100%;
     font-size:40px;
+    flex-shrink: 0;
     font-weight: bold;
-    margin-top:10px;
-}
-
-.blue-block{
-    background-color: #1b9aaa;
-    width: 30%;
-    height: 30%;
-    flex-shrink: 0;
-    flex-grow:1;
-    margin: 5px;
-    border:black 0.5px solid;
-}
-
-.grey-block{
-    background-color: #dddbcb;
-    width: 30%;
-    height: 30%;
-    flex-shrink: 0;
-    flex-grow:1;
-    margin: 5px;
-    border:black 0.5px solid;
-}
-
-.white-block{
+    flex-grow: 0;
     background-color: white;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom:10px;
+    margin-right: 15px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* HTML & CSS Project Block - Blue*/
+
+/* --------------------------------------------------------------------------------------------- */
+
+.project-1{
+    background:
+	radial-gradient(rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 46%),
+	radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.3) 46%), 
+    #1b9aaa;
+	background-position: 0 0, 80px 80px;
+	background-size:10px 10px, 10px 10px, cover;
+    width: 60%;
+}
+
+.project-1:hover{
+    background-image:url(images/html-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Python Project Block - Yellow */
+
+/* --------------------------------------------------------------------------------------------- */
+
+.project-2{
+    background:
+    radial-gradient(rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 46%),
+    radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.3) 46%),  #F4D352;
+    background-position: 0 0, 80px 80px;
+	background-size:10px 10px, 10px 10px, cover;
     width: 30%;
-    height: 30%;
-    flex-shrink: 0;
-    flex-grow: 1;
-    margin: 5px;
-    border:black 0.5px solid;
 }
 
-.yellow-block{
-    background-color: #F4D352;
-    width: 30%;
-    height: 30%;
-    flex-shrink: 0;
-    flex-grow: 1;
-    margin: 5px;
-    border:black 0.5px solid;
+.project-2:hover{
+    background-image:url(images/python-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.black-block{
-    background-color: black;
-    color: white;
-    width: 30%;
-    height: 30%;
-    flex-shrink: 0;
-    flex-grow: 1;
-    margin: 5px;
-    border:black 0.5px solid;
+/* --------------------------------------------------------------------------------------------- */
+
+/* Django Project Block - White */
+
+/* --------------------------------------------------------------------------------------------- */
+
+.project-3{
+    background:
+    radial-gradient(rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 46%),
+	radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.3) 46%), 
+    white;
+	background-position: 0 0, 80px 80px;
+	background-size:10px 10px, 10px 10px, cover;
+    width: 100%;
+    color: black;
 }
 
-.project-icon{
-    width: 50px;
+.project-3:hover{
+    background-image:url(images/django-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* --------------------------------------------------------------------------------------------- */
+
+/* React Project Block - Navy */
+
+/* --------------------------------------------------------------------------------------------- */
+
+.project-4{
+    background:
+    radial-gradient(rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 46%),
+	radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.3) 46%), 
+    #011627;
+	background-position: 0 0, 80px 80px;
+	background-size:10px 10px, 10px 10px, cover;
+    width: 35%;
+}
+
+.project-4:hover{
+    background-image:url(images/react-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Future Project Block - Pink */
+
+/* --------------------------------------------------------------------------------------------- */
+
+.project-5{
+    background:
+    radial-gradient(rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3) 46%),
+	radial-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.3) 46%), 
+    #e71d36;
+	background-position: 0 0, 80px 80px;
+	background-size:10px 10px, 10px 10px, cover;
+    width: 60%;
+}
+
+.project-5:hover{
+    background-image:url(images/comingsoon-logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* media queries */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media (min-width: 576px) { 
+     
+    h1{
+        font-size: 50px;
+        font-family: 'Bangers';  
+    }
+    
+    h2{
+        font-size:30px;
+        color:black;
+        
+    }
+    
+    h3{
+        margin:0px;
+        font-family: 'Bangers';
+        color:#1b9aaa;
+        font-size: 30px;
+    }
+
+    .block-sizing{
+        display:flex;
+        min-height:0;
+        margin: 2px;
+        height:18%;
+        width:100%;
+        justify-content: center;
+    }
+
+    #project-heading{
+        height:auto;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Medium devices (tablets, 768px and up)*/
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+    /* All Project Blocks */
+
+    .block-sizing{
+        display:flex;
+        flex-grow:1;
+        min-height:0;
+        height:28%;
+        margin-left: 5px;
+        margin-right: 5px;
+        border:white 2px solid;
+        justify-content: center;
+        color:white;
+    }
+
+    .project-1{
+        width:60%;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Large devices (desktops, 992px and up) */
+
+/* --------------------------------------------------------------------------------------------- */
+
+@media (min-width: 992px) {
+    body {
+        background-color: green;
+    }
+}
