@@ -10,10 +10,14 @@ html {
     border: solid 1px red;
 } */
 
+
 footer{
-    margin:20px;
     text-align:center;
     font-size: medium;
+    background-color: white;
+    color: black;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 /* --------------------------------------------------------------------------------------------- */
