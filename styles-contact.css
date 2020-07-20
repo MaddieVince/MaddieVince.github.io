@@ -14,7 +14,7 @@ html {
 
 footer{
     text-align:center;
-    font-size: medium;
+    font-size: small;
     background-color: white;
     color: black;
     margin-bottom: 20px;
@@ -47,7 +47,7 @@ body{
 a{
     color: black;
     text-decoration: none;
-    font-size: 16px;;
+    font-size: 12px;
 }
 
 nav{
@@ -60,7 +60,7 @@ nav{
 #text-sort{
     width:100%;
     font-family: 'Bangers';
-    font-size:35px;
+    font-size:30px;
     color:#1b9aaa;
 }
 
@@ -93,7 +93,7 @@ p{
     padding-top:10px;
     font-family: 'Pacifico';
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .div-body{
@@ -131,13 +131,14 @@ img{
     margin-top:20px;
     margin-right:20px;
     text-align: center;
+    font-size: 12px;
 }
 
 #q1{
     justify-content: center;
     display: flex;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right:20px;
     margin-bottom: 20px;
 }
@@ -207,15 +208,16 @@ input{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 5px;
+    font-size: 8px;
 }
 
 textarea{
-    width:70%;
+    width:65%;
     justify-content: flex-start;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right:5px;
-    font-size:12px;
+    font-size:8px;
     font-family: 'Poppins';
 }
 
@@ -225,12 +227,14 @@ button{
     align-items: flex-end;
     margin-top:10px;
     margin-right:5px;
+    font-size:8px;
 }
 
 label{
     display:flex;
     align-items:center;
     margin-left:5px;
+    font-size: 8px;
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -264,6 +268,26 @@ label{
     label{
         font-size:12px;
     }
+
+    a{
+        font-size: 16px;
+    }
+
+    #q0{
+    font-size: 14px;
+    }
+    
+    #q1{
+    margin-top: 20px;
+    }
+
+    textarea{
+        width:70%;
+    }
+
+    footer{
+        font-size:20px;
+    }    
 }
 
 /* --------------------------------------------------------------------------------------------- */
